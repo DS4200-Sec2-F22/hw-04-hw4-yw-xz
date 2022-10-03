@@ -33,3 +33,10 @@ circle {
 	fill: mediumpurple;
 	stroke: none;
 }
+circle:hover{
+    fill:orange;
+}
+.selected {
+    stroke: green;
+    stroke-width: 4;
+}
