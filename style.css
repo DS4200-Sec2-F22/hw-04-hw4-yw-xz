@@ -1,0 +1,35 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    text-align: center;
+}
+.column {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+.column1 {
+    flex: 60%;
+}
+
+.column2 {
+    flex: 40%;
+}
+#frame {
+	width: 500px;
+	height: 500px;
+}
+
+#x-axis, #y-axis {
+	stroke: black;
+	stroke-width: 5;
+}
+
+circle {
+	fill: mediumpurple;
+	stroke: none;
+}
