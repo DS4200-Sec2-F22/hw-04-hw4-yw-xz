@@ -9,7 +9,6 @@ h1 {
     flex-direction: row;
     flex-flow: row wrap;
     flex-wrap: nowrap;
-    text-align: center;
 }
 
 .column1 {
