@@ -4,13 +4,15 @@
 h1 {
     text-align: center;
 }
+h2 {
+    text-align: center;
+}
 .column {
     display: flex;
     flex-direction: row;
     flex-flow: row wrap;
     flex-wrap: nowrap;
 }
-
 .column1 {
     flex: 60%;
 }
@@ -22,12 +24,10 @@ h1 {
 	width: 500px;
 	height: 500px;
 }
-
 #x-axis, #y-axis {
 	stroke: black;
 	stroke-width: 5;
 }
-
 circle {
 	fill: mediumpurple;
 	stroke: none;

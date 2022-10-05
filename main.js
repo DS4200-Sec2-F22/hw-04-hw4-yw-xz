@@ -1,4 +1,4 @@
-
+let circles = document.getElementsByTagName('circle');
 
 function circleClicked(circle) {
     clicked = document.getElementById(circle.target.id);
@@ -9,7 +9,7 @@ function circleClicked(circle) {
 	else {
 		clicked.classList.add("selected");
 	}
-	textDiv.innerHTML = "Last point clicked: " + circle.target.id;
+	textDiv.innerHTML = "Last point clicked: \<br\>" + circle.target.id;
 
 }
 
@@ -20,16 +20,18 @@ function addPoint() {
     Y = document.getElementById('y-value');
     cy = Y.options[Y.selectedIndex].text;
 
+    var newP = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+    newP.id = "(" + cx + "," + cy + ")";
+    newP.setAttribute('cx', 40*cx + 50);
+    newP.setAttribute('cy', 440 - 40*cy);
+    newP.setAttribute('r', 10);
+    newP.addEventListener("click", circleClicked);
+
     frame = document.getElementById('frame');
-    frame.insertAdjacentHTML("afterbegin", "<circle id='(" + cx + "," + cy + ")' cx='" + (40*cx + 50) + "' cy='" + (440 - 40*cy) + "' r='10'/>");
+    frame.appendChild(newP)
 
 }
 
-
-button = document.getElementById('button');
-button.addEventListener("click", addPoint);
-let circles = document.getElementsByTagName('circle');
-console.log(circles)
 for (let i = 0; i < circles.length; i++) {
 	circles[i].addEventListener("click", circleClicked);
 }
