@@ -10,10 +10,18 @@
 
 <body>
     <h1>hw-04: Event Handling</h1>
+
+    <!-- Class for two columns in the page -->
     <div id="flex-columns">
         <div class="column">
+
+            <!-- Class for the first column in the page -->
             <div class="column1">
+
+                <!-- Frame that contains the scatter plot -->
                 <svg id="frame">
+
+                    <!-- Axes and points -->
                     <line id="x-axis" x1="50" y1="440" x2="440" y2="440"/>
                     <line id="y-axis" x1="50" y1="50" x2="50" y2="440"/>
                     <circle id="(1,2)" cx="90" cy="370" r="10"/>
@@ -22,8 +30,12 @@
                     <circle id="(9,9)" cx="410" cy="90" r="10"/>
                 </svg>
             </div>
+
+            <!-- Class for the second column in the page -->
             <div class="column2">
                 <p id="last-selected"><br><br></p>
+
+                <!-- Input coordinates for a new point -->
                 <form> Select the x coordinate for the point you want to add.
                     <select id="x-value">
                         <option>0</option>
@@ -53,6 +65,8 @@
                         <option>9</option>
                     </select>
                     <br><br>
+
+                    <!-- Button for adding point -->
                     <input type="button" onclick="addPoint()" id="button"
                     value="Add point">
                 </form>
@@ -61,6 +75,7 @@
         </div>
     </div>
 
+    <!-- Rescources we used -->
     <h2>Acknowledgements</h2>
     <ul>
         <li>https://www.w3schools.com/js/js_htmldom_elements.asp</li>
