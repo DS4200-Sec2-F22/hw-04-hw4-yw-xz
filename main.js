@@ -20,7 +20,7 @@ function addPoint() {
     Y = document.getElementById('y-value');
     cy = Y.options[Y.selectedIndex].text;
 
-    var newP = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+    let newP = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
     newP.id = "(" + cx + "," + cy + ")";
     newP.setAttribute('cx', 40*cx + 50);
     newP.setAttribute('cy', 440 - 40*cy);
